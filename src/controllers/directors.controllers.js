@@ -1,5 +1,5 @@
 const catchError = require("../utils/catchError");
-const Director = require("../models/directors.model");
+const Director = require("../models/directors");
 
 const getAll = catchError(async (req, res) => {
   const results = await Director.findAll();

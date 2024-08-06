@@ -1,5 +1,5 @@
 const catchError = require("../utils/catchError");
-const Genre = require("../models/genres.model");
+const Genre = require("../models/genres");
 
 const getAll = catchError(async (req, res) => {
   const results = await Genre.findAll();

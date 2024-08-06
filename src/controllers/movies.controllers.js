@@ -1,8 +1,8 @@
 const catchError = require("../utils/catchError");
-const Movie = require("../models/movies.model");
-const Genre = require("../models/genres.model");
-const Actor = require("../models/actors.model");
-const Director = require("../models/directors.model");
+const Movie = require("../models/movies");
+const Genre = require("../models/genres");
+const Actor = require("../models/actors");
+const Director = require("../models/directors");
 
 const getAll = catchError(async (req, res) => {
   const results = await Movie.findAll({ include: [
