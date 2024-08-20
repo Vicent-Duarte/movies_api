@@ -40,7 +40,7 @@ const getOne = catchError(async (req, res) => {
 
 const remove = catchError(async (req, res) => {
   const { id } = req.params;
-  const result = await Movie.bulk({ where: { id } });
+  const result = await Movie.destroy({ where: { id } });
   if (!result) return res.sendStatus(404);
   return res.sendStatus(204);
 });
