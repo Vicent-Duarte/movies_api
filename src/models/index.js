@@ -1,7 +1,7 @@
-const Actor = require("./Actors");
-const Director = require("./Directors");
-const Genre = require("./Genres");
-const Movie = require("./Movies");
+const Actor = require("./Actor");
+const Director = require("./Director");
+const Genre = require("./Genre");
+const Movie = require("./Movie");
 
 Movie.belongsToMany(Actor, { through: 'movies_actors'})
 Movie.belongsToMany(Director, { through: 'movies_director'})

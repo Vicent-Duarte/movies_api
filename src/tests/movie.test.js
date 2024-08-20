@@ -1,9 +1,9 @@
 require('../models')
 const request = require('supertest');
 const app = require('../app');
-const Actor = require('../models/Actors');
-const Director = require('../models/Directors');
-const Genre = require('../models/Genres');
+const Actor = require('../models/Actor');
+const Director = require('../models/Director');
+const Genre = require('../models/Genre');
 
 const BASE_URL = '/api/v1/movies';
 let movieId;
